@@ -73,7 +73,7 @@
         }
 
         /* Download button */
-.download-btn {
+.button {
     display: inline-block;
     margin: 30px auto 0 auto;
     padding: 12px 28px;
@@ -82,7 +82,9 @@
     text-decoration: none;
     font-weight: 600;
     font-family: 'Comfortaa', sans-serif;
-    border-radius: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #f8f2fc;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
@@ -91,7 +93,7 @@
 }
 
 /* Pseudo-element for smooth gradient hover */
-.download-btn::before {
+.button::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -102,12 +104,12 @@
     border-radius: 8px; /* match button rounding */
 }
 
-.download-btn:hover {
+.button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-.download-btn:hover::before {
+.button:hover::before {
     opacity: 1;
 }
 
@@ -155,6 +157,14 @@
     <header>
         <h1>Ryan Levinter</h1>
         <p>Digital Portfolio</p>
+        <div style="text-align:center;">
+        <a class="button" href="portfolio.html" target="_blank">
+            Portfolio
+        </a>
+        <a class="button" href="index.html" target="_blank">
+            Research
+        </a>
+    </div>
     </header>
 
     <main>
